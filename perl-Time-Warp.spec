@@ -1,15 +1,15 @@
 %define upstream_name    Time-Warp
-%define upstream_version 0.5
+%define upstream_version 0.55
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	6
+Version:    %{upstream_version}
+Release:	1
 
 Summary:    Change the start and speed of Event time
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Time/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://github.com/manwar/Time-Warp
+Source0:    https://cpan.metacpan.org/authors/id/M/MA/MANWAR/Time-Warp-%{upstream_version}.tar.gz
 
 
 BuildRequires:	make
