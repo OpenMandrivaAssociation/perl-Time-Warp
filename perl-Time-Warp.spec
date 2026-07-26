@@ -1,15 +1,13 @@
 %define upstream_name    Time-Warp
-%define upstream_version 0.55
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:	1
+Version:    0.55
+Release:	2
 
 Summary:    Change the start and speed of Event time
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://github.com/manwar/Time-Warp
-Source0:    https://cpan.metacpan.org/authors/id/M/MA/MANWAR/Time-Warp-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/M/MA/MANWAR/Time-Warp-%{version}.tar.gz
 
 
 BuildRequires:	make
@@ -22,7 +20,7 @@ dimensionality of 1/2). The Time::Warp module offers developers control
 over the measurement of time.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
